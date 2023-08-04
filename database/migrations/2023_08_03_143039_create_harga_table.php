@@ -13,7 +13,6 @@ return new class extends Migration
     {
         Schema::create('harga', function (Blueprint $table) {
             $table->id();
-            $table->integer('berat_maksimal');
             $table->integer('harga');
             $table->timestamps();
         });

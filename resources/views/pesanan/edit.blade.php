@@ -119,13 +119,13 @@
               <div class="form-group mt-3">
                   <select name="layanan" id="layanan" class="form-control">
                   @foreach ($layanans as $layanan)
-                  <option value="{{ $layanan->id }}" {{ $pesanans->layanan_id == $layanan->id ? 'selected' : '' }}>{{$layanan->layanan }}</option>
+                  <option value="{{ $layanan->id }}" {{ $pesanans->layanan_id == $layanan->id ? 'selected' : '' }}>{{$layanan->code. ' - '.$layanan->layanan }}</option>
                   @endforeach
                   </select>
                   @error('layanan')
                   <div class="text-danger"><small>{{ $message }}</small></div>
                   @enderror
-              </div>
+              </div>  
               <div class="form-group mt-3">
                 <select name="status" id="status" class="form-control">
                 <option value="0">proses </option>

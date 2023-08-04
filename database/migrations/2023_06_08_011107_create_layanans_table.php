@@ -13,6 +13,7 @@ public function up(): void
         $table->id();
         $table->string('code');
         $table->string('layanan');
+        $table->foreignId('harga_id');
         $table->string('description');
         $table->timestamps();
     });

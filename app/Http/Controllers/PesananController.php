@@ -23,15 +23,22 @@ class PesananController extends Controller
         from pesanans
         left join layanans on pesanans.layanan_id = layanans.id
         ');
-        $layanans =  DB::select('
-        select *, layanans.code as
-        layanan_code
-        from pesanans
-        left join pesanans on pesanans.layanan_id = layanans.id
+        $harga =  DB::select('
+        select harga.harga as
+        harga_harga
+        from layanans
+        inner join harga on layanans.harga_id = harga.id
         ');
+        // $layanans =  DB::select('
+        // select *, layanans.code as
+        // layanan_code
+        // from pesanans
+        // left join pesanans on pesanans.layanan_id = layanans.id
+        // ');
         return view('pesanan.index', [
         'pageTitle' => $pageTitle,
-        'pesanans' => $pesanans
+        'pesanans' => $pesanans,
+        'harga' => $harga,
         ]);
     }
     public function histori()

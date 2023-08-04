@@ -94,7 +94,7 @@
                     <th>Nama</th>
                     <th>Nomor Telepon</th>
                     <th>Jenis layanan</th>
-                    <th>berat</th>
+                    <th>Harga</th>
                     <th>Status Pesanan</th>
                     <th>Alamat</th>
                     <th></th>
@@ -105,11 +105,12 @@
                 <tr>
                     <td>{{ $pesanan->nama }}</td>
                     <td>{{ $pesanan->telepon }}</td>
-            @endforeach
-            @foreach ($layanans as $layanan)
-                    <td>{{ $layanan->code. ' - '.$layanan->layanan}}</td>
-            @endforeach
-            @foreach ($pesanans as $pesanan)    
+            {{-- @endforeach
+            @foreach ($layanans as $layanan) --}}
+                    <td>{{ $pesanan->layanan. ' - '.$pesanan->code}}</td>
+                    <td>{{ $pesanan->harga_id}}</td>
+            {{-- @endforeach
+            @foreach ($pesanans as $pesanan)     --}}
                     <td>{{ ["Diambil","Proses","Dikirim","Selesai"][$pesanan->status]}}</td> 
                     <td>{{ $pesanan->alamat }}</td>
                     <td>
@@ -120,6 +121,10 @@
                             @csrf
                             @method('delete')
                             <button type="submit" class="btn btn-outline-dark btn-sm me-2"><i class="bi-trash"></i></button>
+                           
+                                  
+                              </div>
+                          </div>
                         </form>
                     </div>
                     </div>
