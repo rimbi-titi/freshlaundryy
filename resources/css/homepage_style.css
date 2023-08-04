@@ -1,0 +1,528 @@
+* {
+    text-decoration: none;
+    margin: 0px;
+    padding: 0px;
+    font-family: "Poppins";
+}
+
+body {
+    margin: 0px;
+    padding: 0px;
+}
+
+/* NavBar */
+.logo a {
+    font-size: 28px;
+    font-weight: 700;
+    float: left;
+    color: #ffffff;
+}
+
+.logo {
+    margin-top: -10px;
+}
+
+nav {
+    width: 100%;
+    margin: auto;
+    line-height: 60px;
+    background-color: white;
+    box-shadow: 0 5px 10px 10px rgba(20, 20, 20, 0.1);
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+nav ul li a {
+    color: rgb(0, 0, 0);
+    font-weight: 600;
+    font-size: 14px;
+    text-align: center;
+    text-decoration: none;
+    margin-left: 30px;
+}
+
+nav ul li a:hover {
+    color: #1363DF;
+    border-radius: 10px;
+    text-decoration: none;
+}
+
+.tombol-log {
+    background-color: #1363DF;
+    border-radius: 30px;
+    padding: 10px 20px;
+    color: #ffffff;
+    font-size: 12px;
+}
+
+.tombol-log:hover {
+    background-color: #0c3a7f;
+    border-radius: 30px;
+    color: #cbd9ff;
+}
+
+.tombol-3 {
+    background: #1363DF;
+    color: #ffffff;
+    border-radius: 30px;
+    margin-top: 30px;
+    padding: 15px 20px 15px 20px;
+    font-weight: 700;
+    width: 530px;
+    border: 0;
+    cursor: pointer;
+    align-content: center;
+}
+
+.tombol-3:hover {
+    background: #000F27;
+    color: #47B5FF;
+    text-decoration: none;
+}
+
+.judul1 {
+    font-size: 46px;
+    font-weight: 700;
+    font-family: "Poppins";
+}
+
+.subjudul {
+    margin-bottom: 36px;
+}
+
+.img_bg {
+    background-color: #EFEFEF;
+    border-radius: 0px ;
+}
+
+.card-hover:hover {
+    background-color: #dbdbdb;
+    border-radius: 50px;
+    cursor: pointer;
+    scale: 105%;
+}
+
+#about5 {
+    background-color: #637da5;
+    padding: 0;
+    width: 100%;
+    margin: 0;
+}
+
+#about {
+    background-color: #1363DF;
+    padding: 0;
+    width: 100%;
+    margin: 0;
+    color: white;
+}
+
+
+.footerMedsos a {
+    color: white;
+    padding: 6px 12px;
+    font-size: 24px;
+}
+
+.footerMedsos a:hover {
+    color: #344D67;
+    background-color: #ffffff;
+    border-radius: 10px;
+}
+
+.footer-section h5 {
+    margin-left: 440px;
+    margin-bottom: -20px;
+    margin-top: 20px;
+}
+
+/* 
+.boxbiru {
+    background: #1363DF;
+    position: absolute;
+    width: 100%;
+}
+
+body {
+    margin: 0px;
+    padding: 0px;
+    font-family: "Poppins";
+}
+
+.wrapper {
+    width: 1100px;
+    margin: auto;
+    position: relative;
+}
+
+.logo a {
+    font-size: 28px;
+    font-weight: 700;
+    float: left;
+    color: #ffffff;
+}
+
+.logo img {
+    margin-top: 17px;
+    float: left;
+}
+
+.menu {
+    float: right;
+}
+
+nav {
+    width: 100%;
+    margin: auto;
+    display: flex;
+    line-height: 80px;
+    position: sticky;
+    top: 0;
+    background-color: white;
+    z-index: 99;
+    box-shadow: 0 5px 10px 10px rgba(20, 20, 20, 0.1);
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+nav ul li {
+    float: left;
+}
+
+nav ul li a {
+    color: rgb(0, 0, 0);
+    font-weight: 600;
+    font-size: 14px;
+    text-align: center;
+    padding: 4px 40px 4px 15px;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    color: #344D67;
+    background-color: #ffffff;
+    border-radius: 10px;
+    text-decoration: none;
+}
+
+section {
+    margin: 0;
+    display: flex;
+}
+
+.img1 {
+    margin-right: 102px;
+    margin-left: 72px;
+}
+
+.kolom {
+    margin-top: 20px;
+    margin-bottom: 50px;
+    margin-left: 30px;
+}
+
+.kolom .deskripsi {
+    font-size: 20px;
+    font-weight: 700;
+    color: #364f6b;
+}
+
+.ucapan {
+    font-size: 20px;
+    font-weight: 700;
+    color: #364f6b;
+}
+
+.sub {
+    margin-top: 0;
+    margin-bottom: 20px;
+    margin-right: 80px;
+}
+
+.kolom h2 {
+    font-weight: 800;
+    font-size: 45px;
+    margin-bottom: 5px;
+    color: #1363DF;
+    width: 100%;
+    line-height: 50px;
+}
+
+.tbl {
+    background: #1363DF;
+    color: #ffffff;
+    border-radius: 30px;
+    margin-top: 70px;
+    padding: 15px 20px 15px 20px;
+    cursor: pointer;
+    font-weight: 700;
+    
+}
+
+.tbl:hover {
+    background: #000F27;
+    color: #47B5FF;
+    text-decoration: none;
+}
+
+p {
+    margin: 10px 0px 10px 0px;
+    padding: 10px 0px 10px 0px;
+    text-align: justify;
+    font-size: 14px;
+}
+
+#def {
+    background-color: #1363DF;
+    width: 100%;
+    margin: auto;
+    margin: auto;
+}
+
+.kolom2 {
+    margin: 30px;
+    margin-bottom: 0px;
+}
+
+.kolom2 h4 {
+    font-size: 20px;
+    color: #364f6b;
+    margin-top: 0;
+}
+
+.kolom2 p {
+    font-size: 12px;
+}
+
+.vid {
+    margin-left: 10px;
+    margin-top: 5px;
+    margin-right: 5px;
+}
+
+.vid video {
+    border-radius: 16px;
+}
+
+.tengah {
+    text-align: center;
+    width: 100%;
+}
+
+.prev {
+    width: 100%;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.p_prev {
+    text-align: center;
+}
+
+.gambar_prev {
+    width: 24%;
+    margin: 0 auto;
+    margin-bottom: 60px;
+}
+
+.gambar_prev img {
+    width: 80%;
+    border-radius: 20px;
+}
+
+.medsos table {
+    text-decoration: none;
+    margin-top: 30px;
+    margin-left: -20px;
+}
+
+.medsos a {
+    color: #344D67;
+    padding: 6px 16px;
+    font-size: 34px;
+}
+
+.medsos a:hover {
+    color: rgb(255, 255, 255);
+    background-color: #344D67;
+    border-radius: 10px;
+}
+
+.biodata {
+    background-image: linear-gradient(to right, #344D67 , #357881);
+    padding: 30px;
+    margin-left: 60px;
+    border-radius: 20px;
+}
+
+.biodata h3 {
+    font-family: "Poppins";
+    margin-bottom: 0;
+    color: white;
+    font-size: 26px;
+}
+
+.biodata p {
+    color: #dedede;
+    margin-top: 0;
+    padding-bottom: 0;
+}
+
+.petaBox iframe {
+    margin-left: 50px;
+    border-radius: 20px;
+}
+
+.pp {
+    border-radius: 50%;
+}
+
+.hp img {
+    padding-top: 30px;
+    padding-right: 30px;
+}
+
+.spesifikasi, .software {
+    margin-top: 120px;
+    margin-left: 90px;
+}
+
+.spesifikasi p {
+    margin-bottom: 30px;
+}
+
+.software h3 {
+    margin-left: 30px;
+}
+
+#about {
+    background-color: #1363DF;
+    padding: 0;
+    width: 100%;
+    margin: 0;
+}
+
+.footer {
+    width: 100%;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+    color: white;
+}
+
+.footer-section {
+    width: 40%;
+    margin: 0 auto;
+    padding: 40px;
+}
+
+.footer-section img {
+    margin-top: 14px;
+    margin-right: 10px;
+    float: left;
+}
+
+.footer-section p {
+    font-size: 11px;
+}
+
+.footerMedsos table {
+    float: right;
+    margin-top: 36px;
+}
+
+.footerMedsos h6 {
+    float: right;
+    padding: 20px;
+}
+
+.footerMedsos a {
+    color: white;
+    padding: 6px 12px;
+    font-size: 24px;
+}
+
+.footerMedsos a:hover {
+    color: #344D67;
+    background-color: #ffffff;
+    border-radius: 10px;
+}
+
+h3 {
+    font-family: "Poppins";
+    font-weight: 800;
+    font-size: 30px;
+    margin-bottom: 20px;
+    color: #364f6b;
+    width: 100%;
+    line-height: 50px;
+}
+
+.card {
+    margin: 0;
+    display: flex;
+    margin-bottom: 20px;
+    padding-top: 100px;
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 10px 10px 10px rgb(0, 0, 0, .2);
+}
+
+@media screen and (max-width: 991.98px) {
+    .wrapper {
+        width: 90%;
+    }
+
+    .logo a {
+        display: block;
+        width: 100%;
+        text-align: center;
+    }
+
+    nav .menu {
+        width: 100%;
+        margin: 0;
+    }
+
+    nav .menu ul {
+        text-align: center;
+        margin: auto;
+        line-height: 60px;
+    }
+
+    nav .menu ul li {
+        display: inline-block;
+        float: none;
+    }
+
+    section {
+        display: block;
+    }
+
+    section img {
+        display: block;
+        width: 100%;
+        height: auto;
+    }
+
+    .kartu-tutor {
+        width: 50%;
+    }
+
+    .kartu-partner {
+        width: 50%;
+    }
+} */
