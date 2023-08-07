@@ -4,8 +4,8 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\PesananController;
 use App\Http\Controllers\EmployeeController; //ini juga coba2
 use App\Http\Controllers\Auth\LoginController;
-
-
+use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Facades\Redirect;
 
 /*
 |--------------------------------------------------------------------------
@@ -20,11 +20,10 @@ use App\Http\Controllers\Auth\LoginController;
 
 //welcome page
 Route::get('/', function () {
-    
+
     if (Auth::check()) {
-    return Redirect::to('home');
-    }
-    else{
+        return Redirect::to('home');
+    } else {
         return view('welcome');
     }
 });
@@ -45,6 +44,7 @@ Route::get('editpesanan/{id}', [App\Http\Controllers\PesananController::class, '
 Route::delete('hapuspesanan/{id}', [App\Http\Controllers\PesananController::class, 'destroy'])->name('pesanan.destroy');
 Route::put('updatepesanan/{id}', [App\Http\Controllers\PesananController::class, 'update'])->name('pesanan.update');
 Route::post('pesanan', [App\Http\Controllers\PesananController::class, 'store'])->name('pesanan.store');
+Route::get('exportPdf/{id}', [App\Http\Controllers\PesananController::class, 'exportPdf'])->name('pesanan.exportPdf');
 
 
 # Route::resource('pesanan', [App\Http\Controllers\PesananController::class, 'adminHome']) ->name(pesanan);
@@ -56,9 +56,9 @@ Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name
 Route::get('/admin/home', [PesananController::class, 'adminHome'])->name('pesanan.index');;
 Route::post('/login', [LoginController::class, 'authenticate']);
 
-Route::get('/logout', function(){
+Route::get('/logout', function () {
     Auth::logout();
     return Redirect::to('login');
- });
+});
 
- Route::get('/riwayat', [PesananController::class, 'histori'])->name('pesanan.histori');
+Route::get('/riwayat', [PesananController::class, 'histori'])->name('pesanan.histori');
